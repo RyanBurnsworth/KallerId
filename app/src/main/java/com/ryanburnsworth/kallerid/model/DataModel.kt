@@ -1,5 +1,5 @@
 package com.ryanburnsworth.kallerid.model
 
 object DataModel {
-    data class Result(val belongsTo : BelongsTo)
+    data class Result(var id : String, var belongs_to : ArrayList<BelongsTo>)
 }

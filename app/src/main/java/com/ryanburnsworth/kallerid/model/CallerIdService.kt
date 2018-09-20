@@ -14,7 +14,7 @@ interface CallerIdService {
     fun getCallerInfo(@Query("api_key") apiKey: String, @Query("phone") phoneNumber: String)
             : Observable<DataModel.Result>
 
-    companion object {
+    companion object Factory {
         fun create(): CallerIdService {
             val retrofit = Retrofit.Builder()
                     .baseUrl(Config.BASE_URL)
