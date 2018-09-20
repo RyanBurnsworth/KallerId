@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KallerId</string>
+    <string name="error_retreiving">Name Not Found!</string>
+    <string name="error_permission">This app cannot function without your permission!</string>
 </resources>

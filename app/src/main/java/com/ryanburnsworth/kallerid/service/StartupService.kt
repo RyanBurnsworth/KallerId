@@ -6,6 +6,10 @@ import android.content.IntentFilter
 import android.os.IBinder
 import android.support.v4.content.LocalBroadcastManager
 import com.ryanburnsworth.kallerid.receivers.IncomingCallReceiver
+/*
+    This service is fired on bootup by StartupReceiver
+    This service will start the IncomingCallReceiver
+ */
 
 class StartupService : Service() {
     private val incomingCallReceiver = IncomingCallReceiver()
